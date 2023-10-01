@@ -1,0 +1,11 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet id="insert-table-user" author="fiqri-pratama">
+        <loadUpdateData  encoding="UTF-8"
+                         file="liquibase/data/insert-data-1.csv"
+                         schemaName="microservice"
+                         separator=","
+                         primaryKey="id"
+                         tableName="user">
+        </loadUpdateData>
+    </changeSet>
+</databaseChangeLog>
